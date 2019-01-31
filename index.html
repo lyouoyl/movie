@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+	padding: 10px;
+    background: #f1f1f1;
+}
+
+/* Style the header */
+.header {
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+.header h1 {
+    font-size: 50px;
+	height: 30%;
+    width: 100%;
+	background-color:DodgerBlue;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+	width:75%;
+	height:700px;
+	background-color: #FFFFFF;
+	padding:20px;
+	margin-top:20px;
+}
+
+/* Right column */
+.rightcolumn {
+    float: right;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: #999999;
+    padding: 20px;
+    margin-top: 20px;
+	
+}
+
+.mySlides {display: none;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: bottom;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    margin-top: 20px;
+	width:100%;
+	float:right;
+}
+
+a {
+text-decoration:none
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+pre{line-height: 2px;}
+
+
+　　          　
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>IMDb Classic Movies</h1></div>
+</div>
+
+<div class="topnav">
+  <a href="page 1/page 1.html"target="iframe_a">The Shawshank Redemption</a>
+  <a href="page 2/page 2.html"target="iframe_a">The Godfathelr</a>
+  <a href="page 3/page 3.html"target="iframe_a">The Dark Knight</a>
+  <a href="other/introduction.html"target="iframe_a" style="float:right">Home</a>
+</div>
+
+<div class="row">
+   <div class="leftcolumn">	
+	  <iframe src="other/introduction.html" width="100%" height="100%" frameborder="0" name="iframe_a"></iframe>
+   </div> 
+
+    <div class="rightcolumn">
+     <div class="card" style="background-color:#ccc;">
+	 <h3>Movie Review Websites</h3>
+	 <pre>
+       <p><a href="https://www.imdb.com/"><img class="img" src="picture/IMDb_logo.png" alt="IMDb" width="25%" height="10%"></a> IMDb</p>
+       <p><a href="https://www.rottentomatoes.com/"><img class="img" src="picture/rottentomatoes.jpg" alt="Rotten Tomatoes" width="25%" height="10%"></a> Rotten Tomatoes</p>
+	   <p><a href="https://www.rogerebert.com/"><img class="img" src="picture/rogerebert.png" alt="Roger Ebert"  width="25%" height="10%"></a> Roger Ebert</p>
+	   <p><a href="https://www.filmcomment.com/"><img class="img" src="picture/film comment.png" alt="Film Comment"  width="25%" height="10%"></a> Film Comment</p> 
+	 </pre>  
+     </div>
+	
+	 <div class="card">
+	 <h3>MY Top Rated Movies</h3>
+       <div class="slideshow-container">
+
+        <div class="mySlides fade">
+        <img src="picture/1.0.jpg" width="50%" height="25%">
+        <div class="text">Intouchables</div>
+        </div>
+
+        <div class="mySlides fade">
+        <img src="picture/2.0.jpg" width="50%" height="25%">
+        <div class="text">Shutter Island</div>
+        </div>
+
+        <div class="mySlides fade">
+        <img src="picture/3.0.jpg" width="50%" height="25%">
+        <div class="text">Ready Player One</div>
+        </div>
+       </div> 
+<br>
+
+       <div style="text-align:center">
+       <span class="dot"></span> 
+       <span class="dot"></span> 
+       <span class="dot"></span> 
+       </div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+     </div>
+    </div>
+	
+<div class="footer">
+  <p><a style="background-color:Orange;" href="https://www.imdb.com/conditions">Copyright© 1990-2008 </a><a style="background-color:Orange;" href="https://help.imdb.com/imdb?ref_=cons_ftr_imdb">IMDb.com,Inc.</a></p>
+</div>
+
+</body>
+</html>
